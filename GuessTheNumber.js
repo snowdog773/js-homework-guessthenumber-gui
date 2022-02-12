@@ -1,9 +1,6 @@
-// import  { randomInteger } from "./random.js";
+import  { randomInteger } from "./random.js";
 
- const randomNumber = (a = 0, b = 1) =>
-								Math.random() * (b - a) + a;
-const randomInteger = (a, b) =>
-								Math.round(randomNumber(a, b));
+
 /*
 
 	What's this?? a CLASS? What does this do?

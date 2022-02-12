@@ -76,8 +76,8 @@ helpButton.addEventListener(CLICK,
 */
 
 function x() {
-	console.log(game.guess(parseInt(guessInput.value, 10)));
-	guessesLeft.innerHTML = `${game.attemptsRemaining()}`;
+	console.log(game.guess(guessInput.value));
+	guessesLeft.innerHTML = game.attemptsRemaining();
 	return;
 };
 guessButton.addEventListener(CLICK, x() );
