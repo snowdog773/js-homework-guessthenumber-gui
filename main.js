@@ -41,8 +41,8 @@ const game = new GuessTheNumber();
 	   otherwise. (hint: game.lower and game.upper)
 
 */
-lowerBound.innerHTML = `${game.lower}`;
-upperBound.innerHTML = `${game.upper}`;
+lowerBound.innerHTML = game.lower;
+upperBound.innerHTML = game.upper;
 /*
 
 	4. Next, do something very similar but for our attempts
@@ -76,8 +76,8 @@ helpButton.addEventListener(CLICK,
 */
 
 function x() {
-	const response = game.guess(Number(guessInput.value));
-	// guessesLeft.innerHTML = `${game.attemptsRemaining()}`;
+	console.log(game.guess(parseInt(guessInput.value, 10)));
+	guessesLeft.innerHTML = `${game.attemptsRemaining()}`;
 	return;
 };
 guessButton.addEventListener(CLICK, x() );
