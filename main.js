@@ -29,7 +29,7 @@ const helpButton = document.getElementById("helpButton");
 	   EASY, MEDIUM, or HARD just yet.
 
 */
-const game = new GuessTheNumber();
+const game = new GuessTheNumber
 
 /*
 
@@ -74,13 +74,16 @@ helpButton.addEventListener(CLICK,
 	   to our guessesLeft span element by using `innerHTML`.
 
 */
-
-function x() {
-	console.log(game.guess(guessInput.value));
+guessButton.addEventListener(CLICK,
+	() => {
+		debugger;
+	console.log(game.guess(Number(guessInput.value)));
 	guessesLeft.innerHTML = game.attemptsRemaining();
-	return;
-};
-guessButton.addEventListener(CLICK, x() );
+	console.log(game.attempts);
+}
+	
+);
+
 
 
 // SIDE NOTE: when you click these buttons, does something weird happen?
