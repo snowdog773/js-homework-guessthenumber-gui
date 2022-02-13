@@ -29,7 +29,7 @@ const helpButton = document.getElementById("helpButton");
 	   EASY, MEDIUM, or HARD just yet.
 
 */
-const game = new GuessTheNumber
+const game = new GuessTheNumber()
 
 /*
 
@@ -76,10 +76,8 @@ helpButton.addEventListener(CLICK,
 */
 guessButton.addEventListener(CLICK,
 	() => {
-		debugger;
-	console.log(game.guess(Number(guessInput.value)));
+	alert(game.guess(Number(guessInput.value)).toString());
 	guessesLeft.innerHTML = game.attemptsRemaining();
-	console.log(game.attempts);
 }
 	
 );
